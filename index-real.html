@@ -2,14 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="main.css">
     <title>실습</title>
   </head>
   <body>
     <div class="app-bar">
-      <img src="menu.svg">
+      <div class="app-bar-left">
+      <button class="app-bar-img-btn">
+        <img src="menu.svg">
+      </button>
       <h1>Application</h1>
-      <img src="serch.svg">
-      <img src="more.svg">
+      </div>
+      <div class="app-bar-right">
+        <button class="app-bar-img-btn">
+          <img src="search.svg">
+        </button>
+        <button class="app-bar-img-btn">
+          <img src="more.svg">
+        </button>
+      </div>
     </div>
     <section class="note-section">
       <h2 class="section-header">Files</h2>
@@ -17,17 +30,23 @@
         <li class="note-list-item">
           <h3>Document 1</h3>
           <p>Music</p>
-          <img src="more-black.svg">
+          <button class="note-img-btn">
+            <img src="more-black.svg">
+          </button>
         </li>
         <li class="note-list-item">
           <h3>Document 2</h3>
           <p>Video</p>
-          <img src="more-black.svg">
+          <button class="note-img-btn">
+            <img src="more-black.svg">
+          </button>
         </li>
         <li class="note-list-item">
           <h3>Document 3</h3>
           <p>Presentation</p>
-          <img src="more-black.svg">
+          <button class="note-img-btn">
+            <img src="more-black.svg">
+          </button>
         </li>
       </ul>
     </section>
@@ -37,12 +56,16 @@
         <li class="user-list-item">
           <img src="user1.jpg">
           <h3>Trevor Hansen</h3>
-          <img src="more-black.svg">
+          <button class="user-img-btn">
+            <img src="more-black.svg">
+          </button>
         </li>
         <li>
           <img src="user2.jpg">
           <h3>Alex Nelson</h3>
-          <img src="more-black.svg">
+          <button class="user-img-btn">
+            <img src="more-black.svg">
+          </button>
         </li>
       </ul>
     </section>
@@ -52,7 +75,9 @@
 scenester. Farm-to-table selvage small batch swag asymmetrical whatever, tattooed American Apparel meh viral wolf tofu trust fund you probably haven't heard of them. Viral 3 wolf moon retro drinking</p>
     </section>
     <div class="fabs">
-      <button></button>
+      <button>
+        <img src="bounds.svg">
+      </button>
     </div>
   </body>
 </html>
