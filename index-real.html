@@ -9,13 +9,13 @@
   </head>
   <body>
     <div class="app-bar">
-      <div class="app-bar-left">
+      <div class="app-bar__left">
         <button class="icon-btn">
           <img src="menu.svg">
         </button>
         <h1>Application</h1>
       </div>
-      <div class="app-bar-right">
+      <div class="app-bar__right">
         <button class="icon-btn">
           <img src="search.svg">
         </button>
@@ -28,22 +28,28 @@
       <h2 class="section-header">Files</h2>
       <ul class ="file-list">
         <li class="file-list-item">
-          <h3>Document 1</h3>
-          <p>Music</p>
+          <div class="file-list__left">
+            <h3>Document 1</h3>
+            <h6>Music</h6>
+          </div>
           <button class="icon-btn">
             <img src="more-black.svg">
           </button>
         </li>
         <li class="file-list-item">
-          <h3>Document 2</h3>
-          <p>Video</p>
+          <div class="file-list__left">
+            <h3>Document 2</h3>
+            <h6>Video</h6>
+          </div>
           <button class="icon-btn">
             <img src="more-black.svg">
           </button>
         </li>
         <li class="file-list-item">
-          <h3>Document 3</h3>
-          <p>Presentation</p>
+          <div class="file-list__left">
+            <h3>Document 3</h3>
+            <h6>Presentation</h6>
+          </div>
           <button class="icon-btn">
             <img src="more-black.svg">
           </button>
@@ -51,17 +57,17 @@
       </ul>
     </section>
     <section class="user-section">
-      <h2 class="section-header">Users</h2>
+      <h2 class="section-header line">Users</h2>
       <ul class="user-list">
         <li class="user-list-item">
-          <img src="user1.jpg">
+          <div class="user-1 profile"></div>
           <h3>Trevor Hansen</h3>
           <button class="icon-btn">
             <img src="more-black.svg">
           </button>
         </li>
         <li class="user-list-item">
-          <img src="user2.jpg">
+          <div class="user-2 profile"></div>
           <h3>Alex Nelson</h3>
           <button class="icon-btn">
             <img src="more-black.svg">
@@ -70,13 +76,13 @@
       </ul>
     </section>
     <section class="note-section">
-      <h2 class="section-header">Notes</h2>
+      <h2 class="section-header line">Notes</h2>
       <p>Chambray Carles Terry Gibson balls plaid wolf. Disrupt fashion axe 90's quinoa +1 Neutra. Irony ethnic ennui McSweeney's, semiotics small batch squid direct trade. Readymade salvia Echo Park
 scenester. Farm-to-table selvage small batch swag asymmetrical whatever, tattooed American Apparel meh viral wolf tofu trust fund you probably haven't heard of them. Viral 3 wolf moon retro drinking</p>
     </section>
     <div class="fabs">
-      <button>
-        <img src="bounds.svg">
+      <button class="fab">
+        <img class="fab-img" src="bounds.svg">
       </button>
     </div>
   </body>
