@@ -15,12 +15,22 @@ h6{
   font-size: 14px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.54);
-
 }
 
 .app-bar{
   background-color: #009688;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.24), 0 0 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+.app-bar__left h1 {
+
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+  margin-left: 16px;
+  margin-top: 14px;
+
 }
 
 button{

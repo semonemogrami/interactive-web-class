@@ -1,19 +1,20 @@
 
-.app-bar {
+.app-bar{
    width: 100%;
    height: 56px;
+   overflow: auto;
+}
+.search-bar{
+  display: none;
 }
 
-.app-bar {
-  overflow: auto;
-}
-.app-bar__left {
+.app-bar__left{
   float: left;
   margin-left: 16px;
 }
 
-.app-bar__left h1 {
-  float: right;
+.app-bar__left h1{
+  float: left;
   color: #fff;
   font-size: 20px;
   line-height: 28px;
@@ -22,20 +23,26 @@
 
 }
 
-.app-bar__left .icon-btn {
+.app-bar__left .icon-btn{
   margin-top: 16px;
+  float: left;
 }
-.app-bar__right {
+‘
+.app-bar__right{
   float: right;
-  margin-top: 16px;
 
 }
-.app-bar__right .icon-btn {
+.app-bar__right .icon-btn{
+  float: right;
   padding-left: 8px;
   margin-right: 10px;
+  margin-top: 16px;
 }
 
-.file-list-item {
+.jumbotron{
+  display: none;
+}
+.file-list-item{
   height: 72px;
   padding: 16px 0 16px 16px;
   box-sizing: border-box;
@@ -43,35 +50,36 @@
   position: relative;
 
 }
-.file-list__left {
+.file-list__left{
   float: left;
   padding-right: 44px;
 }
 
-.file-list-item .icon-btn {
+.file-list-item .icon-btn{
   position: absolute;
   top: 24px;
   right: 10px;
 }
+
 .line {
   border-top: solid 1px rgba(0, 0, 0, 0.12);
   margin-top: 8px;
 }
 
-.user-list-item {
+.user-list-item{
   overflow: auto;
 }
 
-.user-list-item h3 {
+.user-list-item h3{
   float: left;
   margin: 16px 16px;
 }
 
-.user-list-item .icon-btn {
+.user-list-item .icon-btn{
   float: right;
 }
 
-.user-list-item .profile {
+.user-list-item .profile{
   width: 40px;
   height: 40px;
   border-radius: 100px;
@@ -80,31 +88,154 @@
   margin: 8px 0 8px 16px;
 }
 
-.user-list-item .icon-btn {
+.user-list-item .icon-btn{
     float: right;
     margin-top: 8px;
     margin-right: 10px;
 }
-.user-list-item .user-1 {
+.user-list-item .user-1{
   background-image: url('user1.jpg');
 }
-.user-list-item .user-2 {
+.user-list-item .user-2{
   background-image: url('user2.jpg');
 }
 
-.note-section p {
+.note-section p{
   padding: 0 10px 16px 16px;
   color: rgba(0, 0, 0, 0.87);
   font-size: 14px;
   line-height: 24px;
 }
 
-.fab {
+.fab{
   width: 56px;
   height: 56px;
   border-radius: 100px;
   background-color: #ff3f6f;
+  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.24), 0 0 12px 0 rgba(0, 0, 0, 0.12), 0 6px 6px 0 rgba(0, 0, 0, 0.24), 0 0 6px 0 rgba(0, 0, 0, 0.12);
   position: fixed;
   bottom: 16px;
   right: 16px;
+}
+
+/*PC 분기 입니당*/
+@media screen and (min-width: 1024px){
+  .app-bar {
+     width: 100%;
+     height: 64px;
+     overflow: auto;
+  }
+  .app-bar__right .search-btn{
+  display: none;
+}
+  .app-bar__left .search-bar{
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    border: 0;
+    width: 722px;
+    height: 48px;   
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.18);
+    background-image: url('search.svg');
+    padding-left: 76px;
+    background-repeat: no-repeat;
+    background-position: 19px 14px;
+    margin-top: 8px;
+    outline: 0;
+  }
+ .search-bar::placeholder{
+   font-size: 16px;
+   color: rgba(255, 255, 255, 0.7);
+     padding-top: 14px;
+  }
+  .app-bar__left{
+    margin-left: 0px;
+  }
+  .app-bar__left h1{
+   margin-right: 60px;
+   margin-top: 18px;
+   margin-left: 32px;
+  }
+  .app-bar__left .icon-btn:first-child{
+    margin-top: 20px; 
+    margin-left: 24px;
+  }
+  .wrapper{
+    min-height: 100%;
+  }
+
+  .jumbotron{
+    background-image: url('cover.jpg');
+    background-size: cover;
+    display: block;
+    position: relative;
+    height: 284px;
+    overflow: auto;
+  }
+
+ .jumbotron::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.64);
+    content: '';
+  }
+
+  .jumbotron__copy{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translate3d(0, -50%, 0);
+
+  }
+ 
+  .jumbotron__user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+  }
+
+  .container{
+    margin: 0 auto;
+    width: 924px;
+    position: relative;
+  }
+
+  .subtxt{
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .maintxt{
+    font-weight: 700;
+    font-size: 48px;
+    color: white;
+  }
+
+  .more-btn{
+    width: 114px;
+    height: 36px;
+    border: solid 1px #009688;
+    border-radius: 2px;
+    color: #009688;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin-top: 14px;
+  }
+
+  .jumbotron__stat{
+    position: absolute;
+    bottom: 16px;
+    float: left;
+  }
+  .jumbotron__user{
+    float: right;
+  }
+
 }
