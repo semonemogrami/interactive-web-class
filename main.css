@@ -184,7 +184,8 @@
     content: '';
   }
 
-  .jumbotron__copy{
+  .jumbotron .jumbotron__copy{
+    margin: 0 auto;
     position: absolute;
     top: 50%;
     text-align: center;
@@ -201,7 +202,7 @@
   .container{
     margin: 0 auto;
     width: 924px;
-    position: relative;
+   
   }
 
   .subtxt{
